@@ -1,5 +1,11 @@
-body {
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
+body {
+    background-image: url(kepek/background.jpg);
 }
 
 h1 {
@@ -12,6 +18,7 @@ footer {
     font-weight: bold;
 }
 
+/* Menü */
 nav li {
     font-weight: bold;
     list-style-type: none;
@@ -35,4 +42,40 @@ nav ul {
 
 nav a:hover {
     background-color: #ddd;
+    font-family: "Christmas", sans-serif;
+    background-image: url(kepek/background.jpg);
+  }
+
+
+/* Szerkezet */
+
+main {
+    margin: auto;
+    width: 90%;
+    max-width: 900px;
+    display: grid;
+    grid-template-areas: 
+        "h h"
+        "n n" 
+        "a s"
+        "f f";
 }
+
+header {
+    grid-area: h;
+}
+
+nav {
+    grid-area: n;
+}
+
+article {
+    grid-area: a;
+}
+
+aside {
+    grid-area: s;
+}
+
+footer {
+    grid-area: f;
