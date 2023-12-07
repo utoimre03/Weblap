@@ -1,7 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Christmas", sans-serif;
+    background-image: url(kepek/background.jpg);
   }
   
 main {
     font-family: Mountains of Christmas, sans-serif;
+}
+
+/* Szerkezet */
+
+main {
+    margin: auto;
+    width: 90%;
+    max-width: 900px;
+    display: grid;
+    grid-template-areas: 
+        "h h"
+        "n n" 
+        "a s"
+        "f f";
+}
+
+header {
+    grid-area: h;
+}
+
+nav {
+    grid-area: n;
+}
+
+article {
+    grid-area: a;
+}
+
+aside {
+    grid-area: s;
+}
+
+footer {
+    grid-area: f;
 }
